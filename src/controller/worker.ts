@@ -3,6 +3,10 @@ import Task  from '../entity/task';
 
 export default class WorkerController {
 
+    public static hello(ctx: BaseContext) {
+        ctx.body = 'Hello !';
+    }
+
     public static async getTask(ctx: BaseContext) {
         const workerId = ctx.params.workerId;
         // ctx.body = await Task.find({ worker: workerId });

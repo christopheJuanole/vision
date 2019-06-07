@@ -12,6 +12,7 @@ router.post('/auth/login', controller.authent.login);
 router.get('/auth/me', controller.authent.getJwtPayload);
 
 // WORKER ROUTES
+router.get('/worker/hello', controller.worker.hello);
 router.get('/worker/:workerId/task', controller.worker.getTask);
 router.put('/worker/:workerId/task/:taskId', controller.worker.updateTask);
 
